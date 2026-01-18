@@ -8,20 +8,20 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- favicon -->
-    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="icon" href="./assets/icon.ico">
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
     <header class="bg-teal-700 text-white sticky top-0 z-10">
-        <section class="max-w-5xl mx-auto p-4 flex justify-between items-center">
+        <section class="max-w-5xl mx-auto p-3 flex justify-between items-center">
             <h1 class="text-3xl font-semibold">
-                <a href="#hero" class="flex gap-2"><img src="./assets/nuke01.png" alt="rifleLogo" class="w-10 inline-block">DoomTech</a>
+                <a href="#hero" class="flex gap-2"><img src="./assets/icon.ico" alt="nukeLogo" class="w-10 inline-block">DoomTech</a>
             </h1>
             <div>
                 <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">☰</button>
-                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                <nav class="hidden sm:block space-x-7 text-xl" aria-label="main">
                     <a href="#arms" class="hover:opacity-90">Our Armaments</a>
                     <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
                     <a href="#contact" class="hover:opacity-90">Contact Us</a>
@@ -31,7 +31,7 @@
     </header>
     <main class="max-w-5xl mx-auto">
         <!-- page 01: front page -->
-        <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-7 scroll-m-40">
+        <section id="hero" class="min-h-[90vh] flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-7 scroll-m-40">
             <article class="w-3/4 sm:w-1/2">
                 <h2
                     class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
@@ -46,11 +46,11 @@
                     Peace through superior annihilation.
                 </p>
             </article>
-            <img class="w-2/3" src="./assets/nuke02.png" alt="nukeImg">
+            <img class="w-2/3" src="./assets/nuke.png" alt="nukeImg">
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
         <!-- page 02: Armaments -->
-        <section id="arms" class="p-6 my-12 scroll-m-20">
+        <section id="arms" class="min-h-[90vh] p-6 my-12 scroll-m-20">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Our Armaments
             </h2>
@@ -58,26 +58,26 @@
                 <li class="w-2/3 sm:w-5/6 flex flex-col items-center justify-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
                     <img src="./assets/rifle.png" alt="rifleImg" class="w-1/2 mb-6">
                     <h3 class="text-2xl text-center text-slate-900 dark:text-white">
-                        Guns
+                        Firearms
                     </h3>
                     <p class="hidden sm:block text-2xl text-center text-slate-500 dark:text-slate-400">
                         $
                     </p>
                     <p class="sm:hidden text-center text-slate-500 dark:text-slate-400">
-                        Affordable Firearms
+                        Affordable Weapons
                     </p>
                 </li>
                 <li
                     class="w-2/3 sm:w-5/6 flex flex-col items-center justify-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
                     <img src="./assets/missile.png" alt="rifleImg" class="w-1/2 mb-6">
                     <h3 class="text-2xl text-center text-slate-900 dark:text-white">
-                        Rockets
+                        Missiles
                     </h3>
                     <p class="hidden sm:block text-2xl text-center text-slate-500 dark:text-slate-400">
                         $$
                     </p>
                     <p class="sm:hidden text-center text-slate-500 dark:text-slate-400">
-                        Hypersonic Missiles
+                        Hypersonic Rockets
                     </p>
                 </li>
                 <li
@@ -97,19 +97,83 @@
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
         <!-- page 03: Testimonials -->
-        <section id="testimonials" class="p-6 my-12">
+        <section id="testimonials" class="min-h-[90vh] scroll-m-20 p-6 my-12">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Testimonials
             </h2>
+            <!-- testimonial 01 -->
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-xl sm:text-2xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Gaza? What Gaza? We couldn't find Gaza on the map ever since we partnered with DoomTech. Nothing says ‘commitment to diplomacy’ like a warehouse full of next-generation missiles.
+                    </p>
+                </blockquote>
+                <figcaption class="italic sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212;Benjamin Netanyahu, Israel Prime Minister
+                </figcaption>
+            </figure>
+            <!-- testimonial 02 -->
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-xl sm:text-2xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        We don’t call it a weapons manufacturer anymore. We call it a peace solutions provider with excellent quarterly
+                        earnings. We are proud to partner with an industry that turns taxpayer dollars into international leverage.
+                    </p>
+                </blockquote>
+                <figcaption class="italic sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212;Donald J. Trump, US President
+                </figcaption>
+            </figure>
+            <!-- testimonial 03 -->
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-xl sm:text-2xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Some people see bombs. We see jobs, growth, and a very healthy stock price. This company proves that peace isn’t free—but it <span class="italic">is</span> billable. Can't wait to see Mr. Putin's reaction when these bad boys land on Kremlin lol.
+                    </p>
+                </blockquote>
+                <figcaption class="italic sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212;Volodymyr Zelenskyy, Ukraine President
+                </figcaption>
+            </figure>
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
         <!-- page 04: Contact -->
-        <section id="contact" class="p-6 my-12">
+        <section id="contact" class="min-h-[90vh] p-6 my-12 scroll-mt-16">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Contact Us
             </h2>
+            <form action="" class="max-w-4xl mx-auto text-xl sm:text-2xl flex flex-col items-left gap-4">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject" class="w-full text-black dark:text-white sm:text-xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none dark:bg-gray-900">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="w-full text-black dark:text-white sm:text-xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none dark:bg-gray-900"></textarea>
+                <button class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-40 rounded-xl border border-solid border-slate-900 dark:border-none">Submit</button>
+            </form>
         </section>
     </main>
+    <!-- footer -->
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>DoomTech, Inc.</h2>
+                666 Hell's Gates <br>
+                Underworld Street, Washington, D.C. 12345-6666 <br>
+                Email: <a href="mailto:inquiries@doomtech.com">Inquires@DoomTech.com</a> <br>
+                Phone: <a href="tel:+1234567890">(123) 456-7890</a>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="#arms" class="hover:opacity-90">Our Armaments</a>
+                <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+                <a href="#contact" class="hover:opacity-90">Contact Us</a>
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy; <span id="year">2026</span></p>
+                <p class="text-right">All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
